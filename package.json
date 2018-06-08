@@ -1,0 +1,27 @@
+{
+  "name": "pokeapi-wrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitorvr/pokeapi-wrapper.git"
+  },
+  "author": "Vitor Vianna Ribeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorvr/pokeapi_wrapper/issues"
+  },
+  "homepage": "https://github.com/vitorvr/pokeapi_wrapper#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "express": "4.16.3",
+    "memory-cache": "0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.17.5"
+  }
+}
