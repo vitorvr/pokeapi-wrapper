@@ -1,10 +1,12 @@
 const express = require('express');
 const axios = require('axios');
 const mcache = require('memory-cache');
+const cors = require('cors')
 
 const baseUrl = 'http://pokeapi.co/api/v2';
 
 const app = express();
+app.use(cors());
 
 const cache = (duration) => {
   return (req, res, next) => {
