@@ -9,10 +9,10 @@ const app = express();
 const cache = (duration) => {
   return (req, res, next) => {
     let key = '__express__' + req.originalUrl || req.url
-    let cachedBody = mcache.get(key)
+    let cachedResponse = mcache.get(key)
    
-    if (cachedBody) {
-      res.json(cachedBody);
+    if (cachedResponse) {
+      res.json(cachedResponse);
       return;
     } else {
       res.sendJson = res.json;
